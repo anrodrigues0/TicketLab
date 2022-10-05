@@ -17,8 +17,8 @@ export const ShadowContainer = styled(Shadow).attrs({
 `;
 export const Image = styled(FastImage)`
   width: 100%;
-  height: ${({theme}) => theme.screen.rem(10)}px;
-  border-radius: ${({theme}) => theme.screen.rem(0.7)}px;
+  height: ${({theme}) => theme.screen.rem(10, true)}px;
+  border-radius: ${({theme}) => theme.screen.rem(0.7, true)}px;
 `;
 
 export const ContainerText = styled.View`

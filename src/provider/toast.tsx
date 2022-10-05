@@ -15,7 +15,6 @@ type ToastContextValues = {
 };
 
 export const ToastContext = createContext({} as ToastContextValues);
-
 export function ToastProvider({children}: ToastProviderProps) {
   const [toastList, setToastList] = useState<ToastNotificationsTypes[]>([]);
 

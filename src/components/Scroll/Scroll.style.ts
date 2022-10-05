@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const ScrollView = styled.ScrollView.attrs({
-  contentContainerStyle: {flex: 1},
+  contentContainerStyle: {flexGrow: 1, paddingBottom: 16},
 })`
   background-color: white;
 `;

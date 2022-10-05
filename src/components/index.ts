@@ -6,3 +6,5 @@ export * from './Toast';
 export * from './ProgressBar';
 export * from './HighlightsList';
 export * from './CategoryList';
+export * from './CardTicket';
+export * from './CleanButton';

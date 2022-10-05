@@ -58,6 +58,7 @@ export function DotList<T>({data, sizeItem, ...rest}: DotListProps<T>) {
   };
 
   useLayoutEffect(handleScrollAnimation, [dataSize, positionDot, positionX]);
+
   return (
     <View>
       <FlatList

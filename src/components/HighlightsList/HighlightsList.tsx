@@ -19,7 +19,7 @@ export function HighlightsList() {
   const renderItem: ListRenderItem<{id: string; url: string}> = ({item}) => (
     <Container>
       <ShadowContainer>
-        <Image source={{uri: item?.url}} />
+        <Image source={{uri: item?.url}} resizeMode={'stretch'} />
       </ShadowContainer>
     </Container>
   );
