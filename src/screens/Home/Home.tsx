@@ -16,9 +16,11 @@ export function Home() {
   return (
     <Scroll>
       <Header />
+
       <HighlightsListContainer>
         <HighlightsList />
       </HighlightsListContainer>
+
       <CategoryListContainer>
         <CategoryList />
       </CategoryListContainer>
