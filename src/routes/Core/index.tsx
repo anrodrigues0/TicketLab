@@ -11,7 +11,7 @@ export function Core() {
         name="Cart"
         component={Cart}
         options={{
-          tabBarButton: props => (
+          tabBarButton: (props) => (
             <TabButton nameIcon="shopping-cart" {...props} />
           ),
         }}
@@ -20,14 +20,14 @@ export function Core() {
         name="Home"
         component={Home}
         options={{
-          tabBarButton: props => <TabButton nameIcon="home" {...props} />,
+          tabBarButton: (props) => <TabButton nameIcon="home" {...props} />,
         }}
       />
       <Screen
         name="Profile"
         component={Profile}
         options={{
-          tabBarButton: props => <TabButton nameIcon="user" {...props} />,
+          tabBarButton: (props) => <TabButton nameIcon="user" {...props} />,
         }}
       />
     </Navigator>

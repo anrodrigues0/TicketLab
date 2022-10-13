@@ -27,7 +27,7 @@ export function ToastProvider({children}: ToastProviderProps) {
 
   const onDissmisToast = useCallback(
     (id: string) => {
-      const dissmisToast = toastList.filter(value => value.id !== id);
+      const dissmisToast = toastList.filter((value) => value.id !== id);
       setToastList(dissmisToast);
     },
     [toastList],

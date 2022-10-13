@@ -10,7 +10,7 @@ const highlights = imagesUrl.highligh_banners.map((imgs, _, arr) => {
   }
 });
 
-const categories = imagesUrl.category.map(imgs => {
+const categories = imagesUrl.category.map((imgs) => {
   return {
     id: String(uuid.v4()),
     url: imgs,
