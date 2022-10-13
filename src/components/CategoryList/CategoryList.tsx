@@ -1,15 +1,22 @@
 import {ScrollView} from 'react-native';
 
-import {useImageUrl} from '@/hooks';
 import {CommonsStrings} from '@/common/strings';
 
-import {Title} from '../Texts';
+import {Title, NormalText} from '../Texts';
+import {TextButton} from '../TextButton';
 import {CleanButton} from '../CleanButton';
 
-import {Image, ContainerImage, ContainerText} from './CategoryList.style';
+import {MockCategories} from '../../../mock';
+
+import {
+  Image,
+  ContainerImage,
+  ContainerText,
+  ContainerTextButton,
+  ContainerNameCategory,
+} from './CategoryList.style';
 
 export function CategoryList() {
-  const {categories} = useImageUrl();
   return (
     <>
       <ContainerText>
@@ -17,13 +24,19 @@ export function CategoryList() {
       </ContainerText>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <ContainerImage>
-          {categories.map(items => (
-            <CleanButton key={items.id}>
-              <Image source={{uri: items.url}} />
+          {MockCategories.map((items, key) => (
+            <CleanButton key={key}>
+              <Image source={{uri: items.img}} />
+              <ContainerNameCategory>
+                <NormalText center>{items.name}</NormalText>
+              </ContainerNameCategory>
             </CleanButton>
           ))}
         </ContainerImage>
       </ScrollView>
+      <ContainerTextButton>
+        <TextButton>Veja todos os ingressos</TextButton>
+      </ContainerTextButton>
     </>
   );
 }

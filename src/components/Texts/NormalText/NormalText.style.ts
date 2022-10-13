@@ -6,6 +6,7 @@ type TextStyledProps = {
   color: string;
   size?: FontSizeType;
   strong?: boolean;
+  center?: boolean;
 };
 const SelectSize = (size: FontSizeType, theme: DefaultTheme) => {
   const sizes = {
@@ -21,4 +22,5 @@ export const Text = styled.Text<TextStyledProps>`
     size ? SelectSize(size, theme) : theme.screen.rem(0.75)}px;
   color: ${({theme, color}) => (color ? color : theme.colors.black)};
   font-weight: ${({strong}) => (strong ? 600 : 'normal')};
+  text-align: ${({center}) => (center ? 'center' : 'left')};
 `;

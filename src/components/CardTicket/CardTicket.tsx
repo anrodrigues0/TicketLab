@@ -3,6 +3,7 @@ import {useRem} from 'responsive-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 import {TicketTypes} from '@/types/ticket';
+import {limitText} from '@/utils';
 
 import {NormalText} from '../Texts';
 import {CleanButton} from '../CleanButton';
@@ -51,8 +52,8 @@ export function CardTicket({data}: CardTicketProps) {
           <NormalText color="white" size="small">
             {data.date}
           </NormalText>
-          <NormalText strong color="white" size="large">
-            {data.title}
+          <NormalText strong color="white">
+            {limitText(data.title)}
           </NormalText>
           <NormalText color="white" size="small">
             {data.shortAddress}

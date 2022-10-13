@@ -7,5 +7,5 @@ type ScrollProps = {
 };
 
 export function Scroll({children}: ScrollProps) {
-  return <ScrollView>{children}</ScrollView>;
+  return <ScrollView bounces={false}>{children}</ScrollView>;
 }

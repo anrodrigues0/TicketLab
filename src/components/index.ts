@@ -8,3 +8,6 @@ export * from './HighlightsList';
 export * from './CategoryList';
 export * from './CardTicket';
 export * from './CleanButton';
+export * from './CardTicketList';
+export * from './TicketList';
+export * from './TextButton';

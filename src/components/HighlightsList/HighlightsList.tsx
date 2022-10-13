@@ -14,7 +14,7 @@ import {
 
 export function HighlightsList() {
   const {highlights} = useImageUrl();
-  const keyExtractor = (item: {id: string}) => String(item?.id);
+  const keyExtractor = (item: {id: string}) => item?.id;
 
   const renderItem: ListRenderItem<{id: string; url: string}> = ({item}) => (
     <Container>

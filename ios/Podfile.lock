@@ -84,10 +84,6 @@ PODS:
   - libwebp/mux (1.2.1):
     - libwebp/demux
   - libwebp/webp (1.2.1)
-  - LogRocket (1.6.1)
-  - logrocket-react-native (1.6.1):
-    - LogRocket (= 1.6.1)
-    - React
   - OpenSSL-Universal (1.1.1100)
   - RCT-Folly (2021.07.22.00):
     - boost
@@ -467,7 +463,6 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
-  - "logrocket-react-native (from `../node_modules/@logrocket/react-native`)"
   - OpenSSL-Universal (= 1.1.1100)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
@@ -522,7 +517,6 @@ SPEC REPOS:
     - fmt
     - libevent
     - libwebp
-    - LogRocket
     - OpenSSL-Universal
     - SDWebImage
     - SDWebImageWebPCoder
@@ -542,8 +536,6 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes/hermes-engine.podspec"
-  logrocket-react-native:
-    :path: "../node_modules/@logrocket/react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -635,8 +627,6 @@ SPEC CHECKSUMS:
   hermes-engine: 9cd393f741bfa14d1d0cd90cc373e3619c0bc7ea
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libwebp: 98a37e597e40bfdb4c911fc98f2c53d0b12d05fc
-  LogRocket: bc1ec62267a61b9ea41f38fe980e79577d117e5a
-  logrocket-react-native: 2f2536fd6e535bd149a62af53dbd3c1985ffff97
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   RCT-Folly: 0080d0a6ebf2577475bda044aa59e2ca1f909cda
   RCTRequired: 1b4e0388c8ad776b2d23f8135926fa4e7ddacdf4

@@ -1,4 +1,5 @@
 export type TicketTypes = {
+  id: number;
   category: string;
   banner: string;
   date: string;
