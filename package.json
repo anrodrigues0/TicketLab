@@ -9,7 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "prettier:fix":"npx pretty-quick --staged",
+    "prettier:fix": "npx pretty-quick --staged",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
     "lint:ext": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-staged": "lint-staged"
@@ -17,6 +17,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "yarn lint:fix",
+      "npx prettier --check 'src/**/*.{tsx,ts}'",
       "yarn prettier:fix"
     ]
   },
