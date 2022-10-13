@@ -24,6 +24,7 @@ export function Home() {
       <CategoryListContainer>
         <CategoryList />
       </CategoryListContainer>
+
       <CardTicketListContainer>
         <PureTicketList />
       </CardTicketListContainer>
