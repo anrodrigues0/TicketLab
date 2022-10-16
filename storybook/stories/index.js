@@ -8,3 +8,7 @@ import '@/components/CategoryList/CategoryList.stories';
 import '@/components/ProgressBar/ProgressBar.stories';
 import '@/components/Scroll/Scroll.stories';
 import '@/components/TextButton/TextButton.stories';
+import '@/components/Texts/NormalText/NormalText.stories';
+import '@/components/Texts/Titles/Titles.stories';
+import '@/components/TicketList/TicketList.stories';
+import '@/components/Toast/Toast.stories';

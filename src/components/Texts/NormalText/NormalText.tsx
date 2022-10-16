@@ -10,16 +10,6 @@ type TitleProps = {
   center?: boolean;
 };
 
-export function NormalText({
-  children,
-  color,
-  size,
-  strong,
-  center,
-}: TitleProps) {
-  return (
-    <Text color={color} size={size} strong={strong} center={center}>
-      {children}
-    </Text>
-  );
+export function NormalText({children, ...rest}: TitleProps) {
+  return <Text {...rest}>{children}</Text>;
 }

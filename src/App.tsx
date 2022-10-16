@@ -11,5 +11,5 @@ function App() {
   );
 }
 
-const LoadStorybook = true;
+const LoadStorybook = false;
 export default LoadStorybook ? StorybookUI : App;
