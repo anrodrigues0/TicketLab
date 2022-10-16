@@ -5,6 +5,7 @@
     "jsx": "react-jsx",
     "types": ["styled-components-react-native"],
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "rootDirs": ["src", "stories"],
     "baseUrl": ".",
     "paths": {
       "@screens":["./src/screens"],
