@@ -1,2 +1,10 @@
 import '@/components/Header/Header.stories';
 import '@/components/Logo/Logo.stories';
+import '@/components/CleanButton/CleanButton.stories';
+import '@/components/HighlightsList/HighlightsList.stories';
+import '@/components/CardTicket/CardTicket.stories';
+import '@/components/CardTicketList/CardTicketList.stories';
+import '@/components/CategoryList/CategoryList.stories';
+import '@/components/ProgressBar/ProgressBar.stories';
+import '@/components/Scroll/Scroll.stories';
+import '@/components/TextButton/TextButton.stories';

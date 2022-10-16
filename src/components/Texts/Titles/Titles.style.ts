@@ -11,7 +11,7 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text<TextStyledProps>`
-  font-size: ${({theme}) => theme.screen.rem(1.1)};
+  font-size: ${({theme}) => theme.screen.rem(1.1)}px;
   color: ${({theme, color}) => (color ? color : theme.colors.black)};
   font-weight: 600;
 `;

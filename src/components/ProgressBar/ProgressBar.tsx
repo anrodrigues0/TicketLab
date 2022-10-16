@@ -14,7 +14,6 @@ type ProgressBarProps = {
 
 export function ProgressBar({totalSteps, steps, color}: ProgressBarProps) {
   const progress = useSharedValue(0);
-  console.log('Render Progress');
   const progressAnimated = useAnimatedStyle(() => {
     return {
       width: `${progress.value}%`,
