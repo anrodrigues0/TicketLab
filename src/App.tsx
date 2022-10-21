@@ -1,6 +1,5 @@
 import {Routes} from '@routes';
 import {Providers} from '@/provider';
-
 import StorybookUI from '../storybook';
 
 function App() {
@@ -11,5 +10,5 @@ function App() {
   );
 }
 
-const LoadStorybook = false;
-export default LoadStorybook ? StorybookUI : App;
+const STORYBOOK_LOAD = false;
+export default STORYBOOK_LOAD ? StorybookUI : App;

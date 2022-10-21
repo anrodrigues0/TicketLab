@@ -3,6 +3,7 @@ module.exports = {
     [
       'module:metro-react-native-babel-preset',
       {useTransformReactJSXExperimental: true},
+      'module:react-native-dotenv',
     ],
   ],
   plugins: [
@@ -24,5 +25,13 @@ module.exports = {
       },
     ],
     'react-native-reanimated/plugin',
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: '@env',
+        path: '.env',
+        envName: 'MY_ENV',
+      },
+    ],
   ],
 };
