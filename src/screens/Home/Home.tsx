@@ -14,7 +14,7 @@ import {
 
 export function Home() {
   return (
-    <Scroll>
+    <Scroll hasFixedTopBar>
       <Header />
 
       <HighlightsListContainer>
