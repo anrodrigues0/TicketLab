@@ -1,6 +1,5 @@
-// prettier-ignore
 {
-  "extends": "@tsconfig/react-native/tsconfig.json",   /* Recommended React Native TSConfig base */
+  "extends": "@tsconfig/react-native/tsconfig.json" /* Recommended React Native TSConfig base */,
   "compilerOptions": {
     "jsx": "react-jsx",
     "types": ["styled-components-react-native"],
@@ -8,12 +7,12 @@
     "rootDirs": ["src", "stories"],
     "baseUrl": ".",
     "paths": {
-      "@screens":["./src/screens"],
-      "@routes":["./src/routes"],
+      "@screens": ["./src/screens"],
+      "@routes": ["./src/routes"],
       "@/*": ["./src/*"]
     },
     /* Completeness */
     "skipLibCheck": true,
-    "typeRoots": [ "./src/@types" ]                               /* Skip type checking all .d.ts files. */
+    "typeRoots": ["./src/@types"] /* Skip type checking all .d.ts files. */
   }
 }

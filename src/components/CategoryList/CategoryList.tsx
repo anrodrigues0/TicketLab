@@ -35,7 +35,7 @@ export function CategoryList() {
         </ContainerImage>
       </ScrollView>
       <ContainerTextButton>
-        <TextButton>Veja todos os ingressos</TextButton>
+        <TextButton>{CommonsStrings.home.buttons.seeAllTicket}</TextButton>
       </ContainerTextButton>
     </>
   );
