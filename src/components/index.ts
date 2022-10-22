@@ -11,3 +11,4 @@ export * from './CleanButton';
 export * from './CardTicketList';
 export * from './TicketList';
 export * from './TextButton';
+export * from './HeaderFixedHome';

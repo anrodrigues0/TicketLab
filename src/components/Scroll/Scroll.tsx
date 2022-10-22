@@ -7,6 +7,7 @@ import {
   withTiming,
 } from 'react-native-reanimated';
 
+import {HeaderFixedHome} from '../HeaderFixedHome';
 import {ScrollView, AnimatedHeaderContainer} from './Scroll.style';
 
 type ScrollProps = {
@@ -38,7 +39,11 @@ export function Scroll({children, hasFixedTopBar}: ScrollProps) {
 
   return (
     <>
-      {hasFixedTopBar && <AnimatedHeaderContainer style={animatedBarStyle} />}
+      {hasFixedTopBar && (
+        <AnimatedHeaderContainer style={animatedBarStyle}>
+          <HeaderFixedHome />
+        </AnimatedHeaderContainer>
+      )}
       <ScrollView
         bounces={false}
         scrollEventThrottle={16}
