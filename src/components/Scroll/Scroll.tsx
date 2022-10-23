@@ -15,7 +15,7 @@ type ScrollProps = {
   hasFixedTopBar?: boolean;
 };
 
-const MULTIPLIER_SCALE = 30;
+const MULTIPLIER_SCALE = 45;
 const DIVIDER_HEIGHT_SCREEN = 2;
 
 export function Scroll({children, hasFixedTopBar}: ScrollProps) {
