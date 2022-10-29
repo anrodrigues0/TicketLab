@@ -63,3 +63,6 @@ buck-out/
 
 # environment files
 .env
+
+# react-native-config codegen
+ios/tmp.xcconfig
