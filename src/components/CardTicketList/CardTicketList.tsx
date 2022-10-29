@@ -1,9 +1,10 @@
+import {useEffect, useState} from 'react';
 import {ListRenderItem} from 'react-native';
 
 import {TicketTypes} from '@/types/ticket';
 
 import {Title} from '../Texts';
-import {CardTicket} from '../CardTicket';
+import {CardTicket, CardTicketSkeleton} from '../CardTicket';
 
 import {
   TextContainer,
@@ -17,9 +18,19 @@ type CardTicketListProps = {
 };
 
 export function CardTicketList({category, data}: CardTicketListProps) {
+  //soon this line will be removed, just a loading demo
+  const [loading, setLoading] = useState(false);
+
   const renderItem: ListRenderItem<TicketTypes> = ({item}) => {
-    return <CardTicket data={item} />;
+    return <>{loading ? <CardTicket data={item} /> : <CardTicketSkeleton />}</>;
   };
+
+  //soon this line will be removed, just a loading demo
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 1500);
+  }, []);
 
   return (
     <>
