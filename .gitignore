@@ -66,3 +66,6 @@ buck-out/
 
 # react-native-config codegen
 ios/tmp.xcconfig
+
+# vscode 
+.vscode
