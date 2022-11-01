@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import {TicketTypes} from '@/types/ticket';
 import {limitText} from '@/utils';
+import {useNavigation} from '@/hooks';
 
 import {NormalText} from '../Texts';
 import {CleanButton} from '../CleanButton';
@@ -25,9 +26,13 @@ type CardTicketProps = {
 
 export function CardTicket({data}: CardTicketProps) {
   const rem = useRem();
+  const {navigate} = useNavigation();
   const [favorite, setFavorite] = useState(false);
-
   const handleFavoriteCart = () => setFavorite(!favorite);
+
+  const handleSeeTicket = () => {
+    navigate('DetailTicket');
+  };
 
   return (
     <Container>
@@ -63,7 +68,9 @@ export function CardTicket({data}: CardTicketProps) {
               R$ {data.priceUnit}/un
             </NormalText>
           </PriceContainer>
-          <Button style={({pressed}) => [{opacity: pressed ? 0.7 : 1}]}>
+          <Button
+            style={({pressed}) => [{opacity: pressed ? 0.7 : 1}]}
+            onPress={handleSeeTicket}>
             <NormalText color="white" strong>
               Ver ingresso
             </NormalText>
