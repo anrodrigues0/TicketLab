@@ -2,7 +2,6 @@ import {StyleSheet, StatusBar} from 'react-native';
 import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
 import {ToastProvider} from './toast';
 import {theme} from '@/themes/themes';
-import '@types/jest';
 
 import {ThemeProvider} from './themes';
 

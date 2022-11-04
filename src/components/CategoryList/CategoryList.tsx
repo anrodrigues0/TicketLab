@@ -30,7 +30,7 @@ export function CategoryList() {
   return (
     <>
       <ContainerText>
-        <Title>{CommonsStrings.home.texts.labelCategoryList}</Title>
+        <Title>{CommonsStrings.components.CategoryList.title}</Title>
       </ContainerText>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <ContainerImage>
@@ -51,7 +51,9 @@ export function CategoryList() {
         </ContainerImage>
       </ScrollView>
       <ContainerTextButton>
-        <TextButton>{CommonsStrings.home.buttons.seeAllTicket}</TextButton>
+        <TextButton>
+          {CommonsStrings.components.CategoryList.buttonSeeAllButon}
+        </TextButton>
       </ContainerTextButton>
     </>
   );

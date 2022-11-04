@@ -45,7 +45,7 @@ export function HighlightsList() {
   return (
     <>
       <ContainerText>
-        <Title>{CommonsStrings.home.texts.highlightsList}</Title>
+        <Title>{CommonsStrings.components.HighlightsList.title}</Title>
       </ContainerText>
       <DotList
         data={Object(highlights)}

@@ -2,7 +2,6 @@
   "extends": "@tsconfig/react-native/tsconfig.json" /* Recommended React Native TSConfig base */,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["styled-components-react-native"],
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
     "rootDirs": ["src", "stories"],
     "baseUrl": ".",

@@ -1,12 +1,20 @@
 export const CommonsStrings = {
-  home: {
-    texts: {
-      labelCategoryList: 'Viva experiências únicas',
-      highlightsList: 'Destaques',
+  forms: {},
+  components: {
+    HighlightsList: {
+      title: 'Destaques',
     },
 
-    buttons: {
-      seeAllTicket: 'Veja todos os ingressos',
+    CategoryList: {
+      title: 'Viva experiências únicas',
+      buttonSeeAllButon: 'Veja todos os ingressos',
+    },
+
+    Logo: {
+      ticket: 'Ticket',
+      lab: 'Lab',
     },
   },
+
+  screens: {},
 };
