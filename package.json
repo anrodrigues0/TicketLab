@@ -8,6 +8,8 @@
     "build:android:apk": "cd android && ./gradlew assembleRelease",
     "start": "react-native start --reset-cache",
     "test": "jest",
+    "test:watch": "yarn test -- --watch",
+    "test:ci": "yarn test  --coverage --collectCoverageFrom=src/**/*.tsx --collectCoverageFrom=!src/**/*.stories.tsx",
     "lint": "eslint .",
     "prettier:check": "npx prettier --check 'src/**/*.{tsx,ts}' ",
     "prettier:fix": "npx pretty-quick --staged",

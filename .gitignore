@@ -69,3 +69,6 @@ ios/tmp.xcconfig
 
 # vscode 
 .vscode
+
+# coverage reports 
+coverage/
