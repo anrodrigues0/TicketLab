@@ -1,4 +1,3 @@
-import {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
 import {StackNavigationProp} from '@react-navigation/stack';
 
 import {CoreTabNavigationType} from './Core';
@@ -10,7 +9,6 @@ export type RootNavigationType = CommonStackNavigationType &
     Core: CoreTabNavigationType;
   };
 
-export type RootNavigationWithNavigationRNProps =
-  BottomTabNavigationProp<CoreTabNavigationType> &
-    StackNavigationProp<CommonStackNavigationType> &
-    StackNavigationProp<AuthStackNavigationType>;
+export type RootNavigationWithNavigationRNProps = StackNavigationProp<
+  CommonStackNavigationType & AuthStackNavigationType & CoreTabNavigationType
+>;

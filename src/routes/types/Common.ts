@@ -1,1 +1,3 @@
-export type CommonStackNavigationType = {};
+export type CommonStackNavigationType = {
+  DetailTicket: undefined;
+};

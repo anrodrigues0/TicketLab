@@ -10,8 +10,8 @@ type TextStyledProps = {
 };
 const SelectSize = (size: FontSizeType, theme: DefaultTheme) => {
   const sizes = {
-    small: theme.screen.rem(0.65),
-    large: theme.screen.rem(1),
+    small: theme.screen?.rem(0.65),
+    large: theme.screen?.rem(1),
   };
 
   return sizes[size];
@@ -19,8 +19,8 @@ const SelectSize = (size: FontSizeType, theme: DefaultTheme) => {
 
 export const Text = styled.Text<TextStyledProps>`
   font-size: ${({theme, size}) =>
-    size ? SelectSize(size, theme) : theme.screen.rem(0.75)}px;
-  color: ${({theme, color}) => (color ? color : theme.colors.black)};
+    size ? SelectSize(size, theme) : theme.screen?.rem(0.75)}px;
+  color: ${({theme, color}) => (color ? color : theme.colors?.black)};
   font-weight: ${({strong}) => (strong ? 600 : 'normal')};
   text-align: ${({center}) => (center ? 'center' : 'left')};
 `;

@@ -7,6 +7,7 @@ export const theme = {
     white: 'rgba(255,255,255,1)',
     gray: 'rgba(237,237,237,1)',
     gray_110: 'rgba(177,177,177,1)',
+    gray_120: '#5E5E5E',
     success: '#177336',
     success_90: '#F2FFF7',
     warning: '#B28100',

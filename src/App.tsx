@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {Routes} from '@routes';
 import {Providers} from '@/provider';
 import StorybookUI from '../storybook';
@@ -11,4 +12,4 @@ function App() {
 }
 
 const STORYBOOK_LOAD = false;
-export default STORYBOOK_LOAD ? StorybookUI : App;
+export default App;

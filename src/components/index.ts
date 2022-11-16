@@ -12,3 +12,7 @@ export * from './CardTicketList';
 export * from './TicketList';
 export * from './TextButton';
 export * from './HeaderFixedHome';
+export * from './CircularButton';
+export * from './Texts';
+export * from './Information';
+export * from './Button';

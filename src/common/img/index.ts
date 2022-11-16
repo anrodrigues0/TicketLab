@@ -5,7 +5,6 @@ export const imagesUrl = {
     'https://i.ibb.co/TWWy6Tx/encontro-norte-banner.png',
     'https://i.ibb.co/M6y18Lr/ROCK-C-704x334.png',
     'https://i.ibb.co/bJc2zrb/evento-de-n-do-transe-inseto-partido-techno-dj-r-e-forma-linha-fluidas-din-micas-molde-criativo-conv.jpg',
-    'https://i.ibb.co/wYLXYB2/vip-pt-34732-noticia-villa-mix-2018-festival-invadiu-capital-lisboeta-com-muita-musica1636038422.jpg',
   ],
 
   category: [

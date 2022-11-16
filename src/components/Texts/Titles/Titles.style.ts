@@ -1,7 +1,9 @@
 import styled from 'styled-components/native';
+import {SelectSizeTitle, SizesTitleType} from '@/utils/selectSizeTexts';
 
 type TextStyledProps = {
   color: string;
+  size: SizesTitleType;
 };
 
 export const Container = styled.View`
@@ -11,7 +13,7 @@ export const Container = styled.View`
 `;
 
 export const Text = styled.Text<TextStyledProps>`
-  font-size: ${({theme}) => theme.screen.rem(1.1)}px;
+  font-size: ${({size, theme}) => SelectSizeTitle(size, theme)}px;
   color: ${({theme, color}) => (color ? color : theme.colors.black)};
   font-weight: 600;
 `;
