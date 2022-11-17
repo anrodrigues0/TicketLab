@@ -13,7 +13,7 @@ export function Routes() {
     <NavigationContainer>
       <Navigator screenOptions={{headerShown: false}} initialRouteName="Core">
         <Screen name="Core" component={Core} />
-        {(() => Common())()}
+        <Screen name="Common" component={Common} />
         {(() => Auth())()}
       </Navigator>
     </NavigationContainer>

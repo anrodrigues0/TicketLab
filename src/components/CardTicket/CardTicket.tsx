@@ -7,6 +7,7 @@ import {limitText} from '@/utils';
 import {useNavigation} from '@/hooks';
 
 import {NormalText} from '../Texts';
+import {DetailTicketModal} from '../DetailTicketModal';
 import {CleanButton} from '../CleanButton';
 import {
   Container,
@@ -31,7 +32,7 @@ export function CardTicket({data}: CardTicketProps) {
   const handleFavoriteCart = () => setFavorite(!favorite);
 
   const handleSeeTicket = () => {
-    navigate('DetailTicket');
+    navigate('CommonTab', {screen: 'DetailTicket'});
   };
 
   return (
@@ -77,6 +78,7 @@ export function CardTicket({data}: CardTicketProps) {
           </Button>
         </InformationContainer>
       </ContainerContent>
+      <DetailTicketModal />
     </Container>
   );
 }

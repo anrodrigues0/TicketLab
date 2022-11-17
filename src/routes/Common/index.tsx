@@ -3,12 +3,16 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {CommonStackNavigationType} from '../types/Common';
 import {DetailTicket} from '@screens';
 
-const {Group, Screen} = createStackNavigator<CommonStackNavigationType>();
+const {Navigator, Screen} = createStackNavigator<CommonStackNavigationType>();
 
 export function Common() {
   return (
-    <Group>
-      <Screen name="DetailTicket" component={DetailTicket} />
-    </Group>
+    <Navigator screenOptions={{headerShown: false}}>
+      <Screen
+        name="DetailTicket"
+        component={DetailTicket}
+        options={{presentation: 'modal'}}
+      />
+    </Navigator>
   );
 }
