@@ -16,5 +16,18 @@ export const CommonsStrings = {
     },
   },
 
-  screens: {},
+  screens: {
+    DetailTicket: {
+      labels: {
+        address: 'Endereço',
+        gender: 'Genero',
+        dateHour: 'Data e Hora',
+        place: 'Local',
+        unitPrice: 'Preço unitario',
+      },
+
+      seeMaps: 'Ver no maps',
+      addCart: 'Add Carrinho',
+    },
+  },
 };

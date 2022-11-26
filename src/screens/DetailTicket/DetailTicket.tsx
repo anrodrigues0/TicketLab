@@ -1,6 +1,7 @@
 import {useRem} from 'responsive-native';
 
 import {Title, CircularButton, Logo, Information, Button} from '@/components';
+import {CommonsStrings} from '@/common/strings';
 import {useNavigation} from '@/hooks';
 
 import {MockTickets} from '../../../mock';
@@ -51,21 +52,30 @@ export function DetailTicket() {
       <ContentContainer>
         <InformationContainer>
           <FavoriteContainer>
-            <Information label="Genero" content="Stand Up" />
+            <Information
+              label={CommonsStrings.screens.DetailTicket.labels.gender}
+              content="Stand Up"
+            />
             <CircularButton colors="main">
               <HeartIcon name="heart-outline" size={rem(1.4, true)} />
             </CircularButton>
           </FavoriteContainer>
         </InformationContainer>
         <InformationContainer>
-          <Information label="Data e hora" content="15 Set 2022 as 19h" />
-        </InformationContainer>
-        <InformationContainer>
-          <Information label="Local" content="Teatro Santander" />
+          <Information
+            label={CommonsStrings.screens.DetailTicket.labels.dateHour}
+            content="15 Set 2022 as 19h"
+          />
         </InformationContainer>
         <InformationContainer>
           <Information
-            label="Endereço"
+            label={CommonsStrings.screens.DetailTicket.labels.place}
+            content="Teatro Santander"
+          />
+        </InformationContainer>
+        <InformationContainer>
+          <Information
+            label={CommonsStrings.screens.DetailTicket.labels.address}
             content="Av. Pres. Juscelino Kubitschek, 2041 - Itaim Bibi, São Paulo - SP, 04543-011"
           />
           <ContainerButtonMaps>
@@ -75,7 +85,7 @@ export function DetailTicket() {
               size="small"
               disabledBoldText
               iconRight={<IconMaps name="google-maps" size={rem(1.2, true)} />}>
-              Ver no maps
+              {CommonsStrings.screens.DetailTicket.seeMaps}
             </Button>
           </ContainerButtonMaps>
         </InformationContainer>
@@ -86,7 +96,7 @@ export function DetailTicket() {
               <Icon name="shopping-cart" size={rem(1.2, true)} isWhite />
             }
             colors="secondary">
-            Add Carrinho
+            {CommonsStrings.screens.DetailTicket.addCart}
           </Button>
         </PriceContainer>
       </ContentContainer>
