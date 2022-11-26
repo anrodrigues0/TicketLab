@@ -5,6 +5,7 @@ import {SelectedSizeFactory} from '@/utils/selectSizeTexts';
 export type SizesType = {
   large: number;
   small: number;
+  xSmall: number;
 };
 
 type ButtonPropsStyle = {
@@ -19,6 +20,7 @@ type ButtonLabelPropsStyle = {
 
 const sizes = {
   large: 1,
+  xSmall: 0.25,
   small: 0.45,
 };
 

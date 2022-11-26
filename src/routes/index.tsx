@@ -11,9 +11,9 @@ const {Navigator, Screen} = createStackNavigator<RootNavigationType>();
 export function Routes() {
   return (
     <NavigationContainer>
-      <Navigator screenOptions={{headerShown: false}} initialRouteName="Core">
+      <Navigator initialRouteName="Core" screenOptions={{headerShown: false}}>
         <Screen name="Core" component={Core} />
-        <Screen name="Common" component={Common} />
+        {(() => Common())()}
         {(() => Auth())()}
       </Navigator>
     </NavigationContainer>

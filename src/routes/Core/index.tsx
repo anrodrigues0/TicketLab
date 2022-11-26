@@ -2,7 +2,6 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Home, Profile, Cart} from '@screens';
 import {TabButton} from '@/components';
 
-import {Common} from '../Common';
 import {CoreTabNavigationType} from '../types/Core';
 
 const {Navigator, Screen} = createBottomTabNavigator<CoreTabNavigationType>();
@@ -31,14 +30,6 @@ export function Core() {
         component={Profile}
         options={{
           tabBarButton: (props) => <TabButton nameIcon="user" {...props} />,
-        }}
-      />
-
-      <Screen
-        name="CommonTab"
-        component={Common}
-        options={{
-          tabBarButton: () => false,
         }}
       />
     </Navigator>

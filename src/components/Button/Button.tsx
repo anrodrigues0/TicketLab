@@ -10,6 +10,7 @@ type ButtonProps = {
   iconRight?: ReactNode;
   disabledBoldText?: boolean;
   size?: keyof SizesType;
+  onPress?: () => void;
 };
 
 export function Button({
@@ -19,9 +20,11 @@ export function Button({
   textColor,
   disabledBoldText,
   size,
+  onPress,
 }: ButtonProps) {
   return (
     <ButtonContainer
+      onPress={onPress}
       size={size!}
       colors={colors || 'main'}
       style={({pressed}) => [{opacity: pressed ? 0.7 : 1}]}>

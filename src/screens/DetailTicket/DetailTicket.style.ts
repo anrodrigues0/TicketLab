@@ -45,7 +45,7 @@ export const FavoriteContainer = styled.View`
 
 export const PriceContainer = styled.View`
   margin-bottom: ${({theme}) => theme.screen.rem(0.8)}px;
-  margin-top: ${({theme}) => theme.screen.rem(2)}px;
+  margin-top: ${({theme}) => theme.screen.rem(1.2)}px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;

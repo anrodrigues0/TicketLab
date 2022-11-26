@@ -32,9 +32,9 @@ export function DetailTicket() {
         <ImageBackground source={{uri: MockTickets[0].data[0].banner}} />
         <HeaderContentContainer>
           <LogoContainer>
-            <CircularButton colors="gray" onPress={goBack}>
-              <Icon name="arrow-left" size={rem(1.3, true)} />
-            </CircularButton>
+            <Button size="xSmall" colors="gray" onPress={goBack}>
+              <Icon name="x" size={rem(1.3, true)} />
+            </Button>
             <Logo />
           </LogoContainer>
           <Image
