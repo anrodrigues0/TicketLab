@@ -109,7 +109,8 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "yarn lint:fix",
-      "yarn prettier:fix"
+      "yarn prettier:fix",
+      "yarn test"
     ]
   }
 }
