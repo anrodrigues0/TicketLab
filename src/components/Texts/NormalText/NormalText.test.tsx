@@ -9,7 +9,7 @@ describe('Component NormalText', () => {
   });
 
   describe('NormalText Props', () => {
-    test('Should change color text', () => {
+    test('Should change color text ', () => {
       const {container} = render(<NormalText color="white">Test</NormalText>);
       expect(container.props.color).toBeTruthy();
     });
