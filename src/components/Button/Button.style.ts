@@ -25,21 +25,21 @@ const sizes = {
 };
 
 export const ButtonContainer = styled.Pressable<ButtonPropsStyle>`
-  background-color: ${({theme, colors}) => theme.colors[colors]};
+  background-color: ${({theme, colors}) => theme?.colors[colors]};
   padding: ${({theme, size}) =>
-    theme.screen.rem(SelectedSizeFactory({sizes, size, defaultSize: 0.8}))}px;
-  border-radius: ${({theme}) => theme.screen.rem(0.5)}px;
+    theme?.screen?.rem(SelectedSizeFactory({sizes, size, defaultSize: 0.8}))}px;
+  border-radius: ${({theme}) => theme?.screen?.rem(0.5)}px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 `;
 export const Label = styled.Text<ButtonLabelPropsStyle>`
-  font-size: ${({theme}) => theme.screen.rem(0.85)}px;
-  color: ${({theme, colorTexts}) => theme.colors[colorTexts]};
+  font-size: ${({theme}) => theme.screen?.rem(0.85)}px;
+  color: ${({theme, colorTexts}) => theme?.colors![colorTexts]};
   font-weight: ${({disabledBoldText}) =>
     disabledBoldText ? 'normal' : 'bold'};
 `;
 
 export const IconContainer = styled.View`
-  margin-left: ${({theme}) => theme.screen.rem(1)}px;
+  margin-left: ${({theme}) => theme?.screen?.rem(1)}px;
 `;
