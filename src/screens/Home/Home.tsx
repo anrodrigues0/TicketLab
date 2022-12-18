@@ -16,7 +16,6 @@ export function Home() {
   return (
     <Scroll hasFixedTopBar>
       <Header />
-
       <HighlightsListContainer>
         <HighlightsList />
       </HighlightsListContainer>

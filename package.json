@@ -91,7 +91,6 @@
   "jest": {
     "preset": "react-native",
     "setupFilesAfterEnv": [
-      "<rootDir>/__mocks__/globalMock.js",
       "@testing-library/jest-native/extend-expect"
     ],
     "moduleFileExtensions": [
